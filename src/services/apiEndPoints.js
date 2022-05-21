@@ -1,4 +1,6 @@
-export const baseUrl = 'http://localhost:3030';
+// export const baseUrl = 'http://localhost:3030';
+export const baseUrl = 'https://dashboard.heroku.com';
+
 
 export const login = `${baseUrl}/users/login`;
 export const logout = `${baseUrl}/users/logout`;
