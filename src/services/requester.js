@@ -8,7 +8,7 @@ function request(method, url, data) {
 
     if (data != undefined) { //we have data
         options.headers['Content-Type'] = 'application/json';
-        options.headers['Access-Control-Allow-Origin'] = '*';
+        // options.headers['Access-Control-Allow-Origin'] = '*';
         options.body = JSON.stringify(data);
     }
 
