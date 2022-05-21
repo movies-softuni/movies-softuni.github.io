@@ -1,7 +1,8 @@
 // import { html } from '../../../node_modules/lit-html/lit-html.js';
 import { html } from '//unpkg.com/lit-html?module';
 
-import {ifDefined} from '../../../node_modules/lit-html/directives/if-defined.js';
+// import {ifDefined} from '../../../node_modules/lit-html/directives/if-defined.js';
+import {ifDefined} from '//unpkg.com/lit-html/directives/if-defined.js?module';
 
 export const addEditMovieTemplate = (onSubmit, movie = {}) => html`
 <h3>${movie.title ? "Edit Movie" : "Add Movie"}</h3>
