@@ -1,4 +1,4 @@
-import { html } from '../../node_modules/lit-html/lit-html.js';
+import { html } from '//unpkg.com/lit-html?module';
 import * as authService from '../services/authService.js';
 
 const loginTemplate = (onSubmit) => html`

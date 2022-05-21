@@ -1,4 +1,4 @@
-import { html } from '../../node_modules/lit-html/lit-html.js';
+import { html } from '//unpkg.com/lit-html?module';
 import * as movieService from '../services/movieService.js';
 
 //we can destructure here directly, and not using movie.im, movie. еди какво си на магия

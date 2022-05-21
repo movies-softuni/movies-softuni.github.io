@@ -1,4 +1,4 @@
-import {render} from '../../node_modules/lit-html/lit-html.js';
+import {render} from '//unpkg.com/lit-html?module';
 import { renderNavigator } from '../views/navigationView.js';
 
 const navigationElement = document.querySelector('.navigation');
