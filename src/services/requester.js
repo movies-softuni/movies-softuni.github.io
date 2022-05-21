@@ -32,7 +32,7 @@ function request(method, url, data) {
     return fetch(url, options)
         .then(resp => {
             //the logout does not return a body/reponse
-            console.log(resp);
+            // console.log(resp);
             if (resp.url.endsWith('logout')) {
                 return resp
             } else {
