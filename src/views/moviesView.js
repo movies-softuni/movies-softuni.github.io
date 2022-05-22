@@ -18,9 +18,21 @@ const movieCardTemplate = ({
 const moviesAllTemplate = (movies) => html`
     <h3>Movie Page</h3>
     
-    <ul class="movie-list">
-        ${movies.map(m => movieCardTemplate(m))}
-    </ul>
+    <section class="movies-wrapper">
+        <ul class="movie-list">
+            ${movies.map(m => movieCardTemplate(m))}
+        </ul>
+    
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>    
+    </section>
 `;
 
 export function moviesAllPage(ctx) {
