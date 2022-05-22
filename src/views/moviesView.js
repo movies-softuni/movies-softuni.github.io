@@ -2,7 +2,7 @@ import { html } from '//unpkg.com/lit-html?module';
 import * as movieService from '../services/movieService.js';
 
 //we can destructure here directly, and not using movie.im, movie. еди какво си на магия
-const movieCardTemplate = ({  
+const movieCardTemplate = ({
     _id,
     img,
     title
@@ -17,14 +17,25 @@ const movieCardTemplate = ({
 
 const moviesAllTemplate = (movies) => html`
     <h3>Movie Page</h3>
-        
+    
     <ul class="movie-list">
         ${movies.map(m => movieCardTemplate(m))}
     </ul>
 `;
 
 export function moviesAllPage(ctx) {
-    movieService.getAll()
+    let moviesPromise = null;
+
+    console.log(ctx.qs);
+    if (ctx.qs.search) {
+        moviesPromise = movieService.search(ctx.qs.search);
+    } else if (ctx.qs.page) {
+
+    } else {
+        moviesPromise = movieService.getAll();
+    }
+
+    moviesPromise
         .then(movies => ctx.renderProp(moviesAllTemplate(movies))); // here in the then the promise is resolved
 }
 
@@ -33,5 +44,5 @@ export function myMoviesPage(ctx) {
         .then(movies => {
             // console.log(movies);
             ctx.renderProp(moviesAllTemplate(movies)); // here in the then the promise is resolved
-        });    
+        });
 }

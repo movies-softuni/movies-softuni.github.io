@@ -10,12 +10,15 @@ import { addMoviePage } from './views/addMovieView.js';
 import { editMoviePage } from './views/editMovieView.js';
 import { deleteMoviePage } from './views/deleteMovieView.js';
 import { navigationMiddleware } from './middlewares/navigationMiddleware.js';
+import { querystringMiddleware } from "./middlewares/queryStringMiddleware.js";
 
 
 page(authMiddleware); //we attach first this middleware - it is not intended to be displayed
 
 page(navigationMiddleware); //we attach as 2nd this middleware - display the navigation element
 page(renderMiddleware); //we attach this as 3d midleware - display the root element
+page(querystringMiddleware); //
+
 
 //Генералните routе-ве да са по-надолу изброени, а специфичните route-ве по-нагоре изброени
 page('/', homePage);
