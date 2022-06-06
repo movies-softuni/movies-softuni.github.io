@@ -1,48 +1,47 @@
-# Система за качване на филми
+#  A system for uploading movie posters - a web application
 
-## Функционалност
-* Регистрация/логване на потребители
-* Добавяне на филм - нужен е href линк за самата снимка на добавяния филм
-* Моите филми
-* Търсене на филми по заглавие
-* Редактиране на даден филм
-* Изтриване на филм
-* След всеки рестарт на backend server-а на СофтУни, филмите се reset-ват на само 3 броя налични в базата данни
+## Functionality
+* Registering/ loggin in of users
+* Adding a movie - we upload movie name, image URL from WWW and description.
+* My movies
+* Searching movie by movie title
+* Editing a movie
+* Deleting a movie
+* Important: After every restart of the backend server of SoftUni(deployed at Heroku), the newly uploaded movie posters are deleted and we have the base of 3 hardcored initial movies.
 
-## Технологии
+## Technologies
 * HTML, CSS, JavaScript
 * lit-html, page
-* GitHub Pages client server at - https://movies-softuni.github.io/
-* или Firebase за client server at - https://movies-softuni-7ea72.web.app/   and  https://movies-softuni-7ea72.firebaseapp.com/ 
-* SoftUni backend server uploaded in Heroku.com - start it at https://movies-softuni.herokuapp.com/
+* Client server deployed at GitHub Pages at - https://movies-softuni.github.io/
+* or client server deployed at Firebase at - https://movies-softuni-7ea72.web.app/   and  https://movies-softuni-7ea72.firebaseapp.com/ 
+* SoftUni backend server uploaded at Heroku.com - start it at https://movies-softuni.herokuapp.com/
 
-## Екрани (страници)
+## Screens (pages)
 * **homeView** (landing page)
-* **loginView(Register)** - логин(регистрация) с мейл, потребителско име, парола (peter@abv.bg и pass: 123456)
-* **addMovieView** - добавяне на филм
-* **movieDetailsView** - детайли за филм
-* **editMovieView** - редактиране на филм
-* **deleteMovieView** - изтриване на филм
-* **navigationView** - динамично подаване и на елементите на навигатора
+* **loginView(Register)** - Login (registration is not done yet) with e-mail, username, password. For testing you can log in quickly with e-mail: peter@abv.bg and password: 123456
+* **addMovieView** - adding a new movie poster
+* **movieDetailsView** - details of the movie
+* **editMovieView** - editing the movies
+* **deleteMovieView** - deleting the movie
+* **navigationView** - dynamic solution for displayng the navigator elements
 
 ## Middlewares
-* **authMiddleware** - ако се е логнал потребител, то го задай на контекста
-* **renderMiddleware** - рендерирай динамично подаваната информация в div елемент с клас root
-* **navigationMiddleware** - рендерирай динамично подаваната информация в div елемент с клас navigation
-* **querystringMiddleware** - вземи от URI всички двойки елементи разделени с равно. Пример: ?search=top. Използваме го за търсачката
+* **authMiddleware** - if a user logs in, then set it to the context
+* **renderMiddleware** - render dynamically the given info in a div element with property class="root" (the main content of the web application)
+* **navigationMiddleware** - render dynamically the given info in a div element with property class="navigation" (the navigation part)
+* **querystringMiddleware** - take from the URI all pairs separated by "=". For example: ?search=top. We use it for the searching movies by movie title
 
 ## Backend services
-* **using the style**
-
+* **using the style Fetch()**
 fetch()
     .then(header/response => ())
     .then(resolvedPromise/data => ())
 
-* **requester and endpoints** - задаване на endpoints за backend сървъра - на heroku или на друг адрес. Bind-ване на всяка от видовете заявки GET, POST, PUT, DELETE
+* **requester and endpoints** - setting endpoints for the backend server - currently starting with heroku domain (generally can be any other address where we deploy the backend server). We bind all the kinds of http requests like GET, POST, PUT, DELETE with the idea to use them also when more complexity appears.
 
-* **movieService** - на база на requester and endpoints, custom заявки за работа с филми
+* **movieService** - on the base of requester and endpoints, and custom HTTP requests specific for working with our movies.
 
 
 ## Refreshing the SinglePageApplication
-* **added 404.html and initial script in the index.html file** - да не се чупи при презареждане на който и да е линк от нашето SPA
+* **added 404.html and initial script in the index.html file** - in order our single page application (SPA) not to crash when re-loading a page
 

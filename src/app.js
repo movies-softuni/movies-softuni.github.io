@@ -31,6 +31,4 @@ page('/movies/:movieId', movieDetailsPage);
 page('/movies/:movieId/delete', deleteMoviePage);
 
 
-
-
 page.start();
