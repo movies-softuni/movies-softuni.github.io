@@ -15,6 +15,7 @@
 * Client server deployed at GitHub Pages at - https://movies-softuni.github.io/
 * or client server deployed at Firebase at - https://movies-softuni-7ea72.web.app/   and  https://movies-softuni-7ea72.firebaseapp.com/ 
 * SoftUni backend server uploaded at Heroku.com - start it at https://movies-softuni.herokuapp.com/
+  https://movies-softuni.herokuapp.com/data and https://movies-softuni.herokuapp.com/data/movies
 
 ## Screens (pages)
 * **homeView** (landing page)
