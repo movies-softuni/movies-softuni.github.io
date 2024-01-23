@@ -32,9 +32,6 @@
 ## Technologies
 * HTML, CSS, JavaScript
 * lit-html, page
-* SoftUni backend server uploaded at Heroku.com - start it at https://movies-softuni.herokuapp.com/, https://movies-softuni.herokuapp.com/data and https://movies-softuni.herokuapp.com/data/movies
-* Client server deployed at GitHub Pages at - https://movies-softuni.github.io/
-* Client server was deployed time ago also at Firebase at (currently not working) - https://movies-softuni-7ea72.web.app/   and  https://movies-softuni-7ea72.firebaseapp.com/ 
 
 ## Screens (pages)
 * **homeView** (landing page)
