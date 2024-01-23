@@ -23,7 +23,7 @@ function request(method, url, data) {
             method,
             headers: {
                 'Content-type': 'application/json'
-                //...(token && {'X-Authorization' : token})  // хакерски вариант на if - спредни ми null или ми спредни обекта
+                //...(token && {'X-Authorization' : token})  // a hacker option for if - spread the null and spread the object
             },
             body: JSON.stringify(data)
         }
@@ -38,7 +38,7 @@ function request(method, url, data) {
             } else {
                 return resp.json();
             }            
-        } );  //върни response = promise
+        } );  //return response = promise
 }
 
 //When many items/Classes we save/edit/delete, then it is better to use like this below:

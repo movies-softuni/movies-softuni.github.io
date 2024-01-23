@@ -1,4 +1,4 @@
-import { html } from '//unpkg.com/lit-html?module';
+import { html } from '//unpkg.com/lit-html@2.2.3?module';
 
 const homeTemplate = () => html`
 <section>

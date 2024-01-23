@@ -1,6 +1,5 @@
-import { html } from '//unpkg.com/lit-html?module';
+import { html } from '//unpkg.com/lit-html@2.2.3?module';
 import * as authService from '../services/authService.js';
-import * as movieService from '../services/movieService.js';
 
 
 const showUserInfo = (email) => html`

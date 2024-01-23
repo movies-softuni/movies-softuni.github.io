@@ -9,7 +9,7 @@ export function authMiddleware(ctx, next) {
         ctx.email = userData.email;
         ctx.token = userData.accessToken;
     } 
-    //контекстът се презаписва всеки път - няма нужда от else
+    // the context is re-written every time - so no need the else
     /*else {
         ctx.isAuthenticated = false;
         ctx.email = null;

@@ -1,4 +1,4 @@
-import { html } from '//unpkg.com/lit-html?module';
+import { html } from '//unpkg.com/lit-html@2.2.3?module';
 import * as movieService from '../services/movieService.js';
 
 const deleteMovieTemplate = (movie, onClick) => html`
@@ -23,6 +23,4 @@ export function deleteMoviePage(ctx) {
         .then(movie => {
             ctx.renderProp(deleteMovieTemplate(movie, onMovieDelete));
         });
-
-    
 }

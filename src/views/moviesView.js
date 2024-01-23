@@ -1,7 +1,7 @@
-import { html } from '//unpkg.com/lit-html?module';
+import { html } from '//unpkg.com/lit-html@2.2.3?module';
 import * as movieService from '../services/movieService.js';
 
-//we can destructure here directly, and not using movie.im, movie. еди какво си на магия
+//We can destructure here directly, and not using movie.im, movie. or whatever
 const movieCardTemplate = ({
     _id,
     img,

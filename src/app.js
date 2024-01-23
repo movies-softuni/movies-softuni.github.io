@@ -16,17 +16,17 @@ import { querystringMiddleware } from "./middlewares/queryStringMiddleware.js";
 page(authMiddleware); //we attach first this middleware - it is not intended to be displayed
 
 page(navigationMiddleware); //we attach as 2nd this middleware - display the navigation element
-page(renderMiddleware); //we attach this as 3d midleware - display the root element
-page(querystringMiddleware); //
+page(renderMiddleware); //we attach this as 3d middleware - display the root element
+page(querystringMiddleware);
 
 
-//Генералните routе-ве да са по-надолу изброени, а специфичните route-ве по-нагоре изброени
+// The general routes to be displayed last, and the specific routes to be displayed first
 page('/', homePage);
 page('/login', loginPage);
 page('/movies', moviesAllPage);
-page('/movies/add', addMoviePage); //!!! така не се бие със следващия route /movies/:movieId
+page('/movies/add', addMoviePage); // thus no problem with the next route  /movies/:movieId
 page('/my-movies', myMoviesPage);
-page('/movies/:movieId/edit', editMoviePage); //!!! така не се бие със следващия route /movies/:movieId
+page('/movies/:movieId/edit', editMoviePage); // thus no problem with the next route  /movies/:movieId
 page('/movies/:movieId', movieDetailsPage);
 page('/movies/:movieId/delete', deleteMoviePage);
 

@@ -1,21 +1,35 @@
-#  A system for uploading movie posters - a web application
+#  Demo project for uploading movie posters - a web application
 
 ## Functionality
-* Registering/ loggin in of users
+* Logging in/out - For testing you can log in quickly with **e-mail: peter@abv.bg** and **password: 123456**
+* Movies
+
+![img_1.png](img_1.png)
+
 * Adding a movie - we upload movie name, image URL from WWW and description.
-* My movies
+
+![img_3.png](img_3.png)
+
+* My Movies
+
+![img_4.png](img_4.png)
+
+* Details section with Edit and Delete buttons
+
+![img_5.png](img_5.png)
+
 * Searching movie by movie title
-* Editing a movie
-* Deleting a movie
-* Important: After every restart of the backend server of SoftUni(deployed at Heroku), the newly uploaded movie posters are deleted and we have the base of 3 hardcored initial movies.
+
+![img_6.png](img_6.png)
+
+* **Important:** After every restart of the backend server of SoftUni(deployed at Heroku), the newly uploaded movie posters are deleted and we have the base of 3 hardcored initial movies.
 
 ## Technologies
 * HTML, CSS, JavaScript
 * lit-html, page
+* SoftUni backend server uploaded at Heroku.com - start it at https://movies-softuni.herokuapp.com/, https://movies-softuni.herokuapp.com/data and https://movies-softuni.herokuapp.com/data/movies
 * Client server deployed at GitHub Pages at - https://movies-softuni.github.io/
-* or client server deployed at Firebase at - https://movies-softuni-7ea72.web.app/   and  https://movies-softuni-7ea72.firebaseapp.com/ 
-* SoftUni backend server uploaded at Heroku.com - start it at https://movies-softuni.herokuapp.com/
-  https://movies-softuni.herokuapp.com/data and https://movies-softuni.herokuapp.com/data/movies
+* Client server was deployed time ago also at Firebase at (currently not working) - https://movies-softuni-7ea72.web.app/   and  https://movies-softuni-7ea72.firebaseapp.com/ 
 
 ## Screens (pages)
 * **homeView** (landing page)
