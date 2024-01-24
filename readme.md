@@ -1,11 +1,12 @@
 #  Demo project for uploading movie posters - a web application
 
 ## Deployed at
-* SoftUni backend server deployed at Heroku using Heroku CLI - start it at https://movies-softuni.herokuapp.com/, https://movies-softuni.herokuapp.com/data and https://movies-softuni.herokuapp.com/data/movies
-* Client server deployed at GitHub Pages at - https://movies-softuni.github.io/ - for testing you can log in quickly with **e-mail: peter@abv.bg** and **password: 123456**
+* SoftUni backend server deployed at Heroku using Heroku CLI - start it at https://movies-softuni.herokuapp.com/data and https://movies-softuni.herokuapp.com/data/movies
+* Client server deployed at GitHub Pages at - **https://movies-softuni.github.io/** - for testing you can log in quickly with **e-mail: peter@abv.bg** and **password: 123456**
 * Client server was deployed time ago also at Firebase at (currently not working) - https://movies-softuni-7ea72.web.app/   and  https://movies-softuni-7ea72.firebaseapp.com/
 
 ## Functionality
+* Registration functionality not done yet!
 * Logging in/out - for testing you can log in quickly with **e-mail: peter@abv.bg** and **password: 123456**
 * Movies
 
