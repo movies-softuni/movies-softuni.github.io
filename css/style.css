@@ -11,6 +11,10 @@ body {
     width: 400px;
 }
 
+.register-container {
+    width: 400px;
+}
+
 .movie-list {
     display: flex;
     list-style: none;

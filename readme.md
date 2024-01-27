@@ -6,27 +6,33 @@
 * Client server was deployed time ago also at Firebase at (currently not working) - https://movies-softuni-7ea72.web.app/   and  https://movies-softuni-7ea72.firebaseapp.com/
 
 ## Functionality
-* Registration functionality not done yet!
+* Registration functionality - when backend server is restarted, then all in-memory data in the backend server is cleared
+
+![register.png](readme_media/register.png)
+
 * Logging in/out - for testing you can log in quickly with **e-mail: peter@abv.bg** and **password: 123456**
+
+![login.png](readme_media/login.png)
+
 * Movies
 
-![img_1.png](readme_media/img_1.png)
+![movies.png](readme_media/movies.png)
 
 * Adding a movie - we upload movie name, image URL from WWW and description.
 
-![img_3.png](readme_media/img_3.png)
+![addMovie.png](readme_media/addMovie.png)
 
 * My Movies
 
-![img_4.png](readme_media/img_4.png)
+![myMovies.png](readme_media/myMovies.png)
 
 * Details section with Edit and Delete buttons
 
-![img_5.png](readme_media/img_5.png)
+![editOrDeleteMovie.png](readme_media/editOrDeleteMovie.png)
 
 * Searching movie by movie title
 
-![img_6.png](readme_media/img_6.png)
+![searchMovie.png](readme_media/searchMovie.png)
 
 * **Important:** After every restart of the backend server of SoftUni(deployed at Heroku), the newly uploaded movie posters are deleted and we have the base of 3 hardcored initial movies.
 
@@ -36,7 +42,8 @@
 
 ## Screens (pages)
 * **homeView** (landing page)
-* **loginView(Register)** - Login (registration is not done yet) with e-mail, username, password. For testing you can log in quickly with e-mail: peter@abv.bg and password: 123456
+* **loginView** - Login with e-mail and password. For testing you can log in quickly with **e-mail: peter@abv.bg** and **password: 123456**
+* **registerView** - Register
 * **addMovieView** - adding a new movie poster
 * **movieDetailsView** - details of the movie
 * **editMovieView** - editing the movies

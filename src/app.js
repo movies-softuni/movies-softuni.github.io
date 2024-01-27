@@ -4,6 +4,7 @@ import { renderMiddleware } from './middlewares/renderMiddleware.js';
 import { homePage } from './views/homeView.js';
 import { moviesAllPage, myMoviesPage } from './views/moviesView.js';
 import { loginPage } from './views/loginView.js';
+import {registerPage} from "./views/registerView.js";
 import { movieDetailsPage } from './views/movieDetailsView.js';
 import { authMiddleware } from './middlewares/authMiddleware.js';
 import { addMoviePage } from './views/addMovieView.js';
@@ -23,6 +24,7 @@ page(querystringMiddleware);
 // The general routes to be displayed last, and the specific routes to be displayed first
 page('/', homePage);
 page('/login', loginPage);
+page('/register', registerPage);
 page('/movies', moviesAllPage);
 page('/movies/add', addMoviePage); // thus no problem with the next route  /movies/:movieId
 page('/my-movies', myMoviesPage);

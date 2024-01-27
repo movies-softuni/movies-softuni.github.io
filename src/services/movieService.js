@@ -16,7 +16,7 @@ export const getMyMovies =
 (ownerId) => request.get(`${apiEndPnts.movies}?where=_ownerId%3D"${ownerId}"`); //we return a promise
 
 export const updateMovie = 
-(movieId, title, imageUrl, description) => request.put(`${apiEndPnts.movies}/${movieId}`, {title, img: imageUrl, description}); //we returns a promise
+(movieId, title, imageUrl, description) => request.put(`${apiEndPnts.movies}/${movieId}`, {title, img: imageUrl, description}); //we return a promise
 
 export const deleteMovie = 
 (movieId) => request.del(`${apiEndPnts.movies}/${movieId}`);
