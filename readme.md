@@ -10,23 +10,23 @@
 * Logging in/out - for testing you can log in quickly with **e-mail: peter@abv.bg** and **password: 123456**
 * Movies
 
-![img_1.png](img_1.png)
+![img_1.png](readme_media/img_1.png)
 
 * Adding a movie - we upload movie name, image URL from WWW and description.
 
-![img_3.png](img_3.png)
+![img_3.png](readme_media/img_3.png)
 
 * My Movies
 
-![img_4.png](img_4.png)
+![img_4.png](readme_media/img_4.png)
 
 * Details section with Edit and Delete buttons
 
-![img_5.png](img_5.png)
+![img_5.png](readme_media/img_5.png)
 
 * Searching movie by movie title
 
-![img_6.png](img_6.png)
+![img_6.png](readme_media/img_6.png)
 
 * **Important:** After every restart of the backend server of SoftUni(deployed at Heroku), the newly uploaded movie posters are deleted and we have the base of 3 hardcored initial movies.
 
