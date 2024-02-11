@@ -1,9 +1,11 @@
 #  Demo project for uploading movie posters - a web application
 
 ## Deployed at
-* SoftUni backend server deployed at Heroku using Heroku CLI - start it at https://movies-softuni.herokuapp.com/data and https://movies-softuni.herokuapp.com/data/movies
+* SoftUni backend server deployed at Railway using a Github repo - start it at https://softuni-js-server-production.up.railway.app/data  and https://softuni-js-server-production.up.railway.app/data/movies
 * Client server deployed at GitHub Pages at - **https://movies-softuni.github.io/** - for testing you can log in quickly with **e-mail: peter@abv.bg** and **password: 123456**
-* Client server was deployed time ago also at Firebase at (currently not working) - https://movies-softuni-7ea72.web.app/   and  https://movies-softuni-7ea72.firebaseapp.com/
+* Previous other deployments:
+  * SoftUni backend server deployed at Heroku using Heroku CLI (will be removed soon) - start it at https://movies-softuni.herokuapp.com/data and https://movies-softuni.herokuapp.com/data/movies
+  * Client server was deployed time ago also at Firebase at (currently not working) - https://movies-softuni-7ea72.web.app/   and  https://movies-softuni-7ea72.firebaseapp.com/
 
 ## Functionality
 * Registration functionality - when backend server is restarted, then all in-memory data in the backend server is cleared
